@@ -1,0 +1,46 @@
+## vi
+*.swp
+
+## pictures
+*.jpg
+*.JPG
+
+## nfs
+.nfs*
+
+### LaTeX ###
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.pdf
+# mklatex
+*.fdb_latexmk
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.snm
+*.vrb
+ 
+# xypic
+*.xyc

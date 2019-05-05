@@ -1,0 +1,55 @@
+\begin{frame}{Conventions}
+\begin{itemize}
+\setlength\itemsep{\fill}
+\item
+$\log = \log_2$.
+\item
+All groups and sets are finite!
+\item
+$\Omega, \Delta, \Gamma$ sets,
+$G \leq \sym \Omega$, $g \in G$, $\alpha \in \Omega$.
+\item
+Functions from the left $f(x)$
+but group actions from the right: $\alpha ^ g = g(\alpha)$.
+    \begin{itemize}
+        \item
+        $G$ acts on functions $\Omega \to \Delta$ via
+        $f ^ g = f \circ g ^ {-1}$.
+    \end{itemize}
+\item
+$T$ \emph{always} denotes a finite non-abelian simple group.
+If $T \leq \sym \Delta$ it acts transitively and non-regularly on $\Delta$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Goal}
+    \begin{thm}
+        Let $G = \gen{X} \leq \sym \Omega$ be a primitive group
+        of PA type.
+        The normaliser
+        $N_{\sym \Omega}(G)$
+        can be computed in quasipolynomial time
+        $O(n ^ 3 \cdot 2 ^ {2 \log n \log \log n} \cdot \abs X)$.
+    \end{thm}
+\end{frame}
+
+\begin{frame}{Recursion}
+    \begin{center}
+        \hspace{-5em}
+        \begin{tabular}{r c}
+            & Intransitive
+            \\
+            Mun See Chang & $\updownarrow$
+            \\
+            & Transitive
+            \\
+            & $\updownarrow$
+            \\
+            & Primitive
+            \\
+            Me & $\updownarrow$
+            \\
+            & Simple
+        \end{tabular}
+    \end{center}
+\end{frame}

@@ -1,0 +1,130 @@
+\begin{frame}{Complexity Classes}
+    Big $O$ Notation
+    \pause
+    \\[2em]
+    \hspace{2em}
+    \begin{tabular}{l l}
+    Polynomial Time:
+    &
+    $f \in O(n ^ c)$
+    \\
+    Quasipolynomial Time:
+    &
+    $f \in 2 ^ {O((\log n) ^ c)}$
+    \\
+    Simply Exponential Time:
+    &
+    $f \in 2 ^ {O(n)}$
+    \\
+    Exponential Time:
+    &
+    $f \in 2 ^ {O(n ^ c)}$
+    \end{tabular}
+    \pause
+    \\[2em]
+    We say a problem $A$ is \emph{polynomial time reducible} to a problem $B$
+    if there exists a polynomial time algorithm that transforms
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item
+        instances of $A$ into instances of $B$, and
+        \item
+        solutions of $B$ into solutions of $A$.
+    \end{itemize}
+\end{frame}
+
+\note[enumerate]{
+\item
+changing input size to $\log n$ jumps up two classes
+\item
+$A$ is easier than $B$
+\\ OR \\
+$A$ can be embedded into $B$
+}
+
+\begin{frame}{Complexity Overview}
+    \begin{tabular}{l l}
+    \only<4->{%
+        \underline{Simply Exponential:}
+    }
+    \only<-3>{\hphantom{%
+        \underline{Simply Exponential:}
+    }}
+    &
+    \\
+    &
+    \only<4->{%
+    Permutation-Iso, Normaliser,
+    }
+    \only<-3>{\hphantom{%
+    Permutation-Iso, Normaliser,
+    }}
+    \\
+    &
+    \only<4->{%
+    Canonical Labeling
+    }
+    \only<-3>{\hphantom{%
+    Canonical Labeling
+    }}
+    \\[1em]
+    \only<2->{%
+    \underline{Quasipolynomial:}
+    }
+    \only<-1>{\hphantom{%
+    \underline{Quasipolynomial:}
+    }}
+    &
+    \\
+    &
+    \only<3->{%
+    String-Iso, Intersection, Centraliser
+    }
+    \only<-2>{\hphantom{%
+    String-Iso, Intersection, Centraliser
+    }}
+    \\[1em]
+    &
+    \only<2->{%
+    Graph-Iso
+    }
+    \only<-1>{\hphantom{%
+    Graph-Iso
+    }}
+    \\[1em]
+    \underline{Polynomial:}
+    &
+    \\
+    &
+    Base \& SGS, Composition Series,
+    Socle
+    \\
+    \end{tabular}
+\end{frame}
+
+\note{
+FIXME: USE UNCOVER OR ONLY ALTERNATIVE
+https://tex.stackexchange.com/questions/13793/beamer-alt-command-like-visible-instead-of-like-only
+}
+
+\begin{frame}{Normaliser and Subproblems}
+    \begin{tabular}{l l}
+        \multicolumn{2}{c}
+        {\underline{Simply Exponential} \hspace{4em} $~$}
+        \\[0.5em]
+        \multicolumn{2}{c}
+        {Normalisers of arbitrary groups}
+        \\[1.5em]
+
+        \underline{Polynomial}
+        &
+        \underline{Quasipolynomial}
+        \\[0.5em]
+        \parbox{0.5\linewidth}
+        {Normalisers of groups with \\ restricted composition factors}
+        &
+        \parbox{0.5\linewidth}
+        {Normalisers of primitive \\ groups}
+        \\
+    \end{tabular}
+\end{frame}

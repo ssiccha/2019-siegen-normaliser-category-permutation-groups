@@ -1,0 +1,110 @@
+\begin{frame}{Fundamentals}
+    \begin{defn}
+        FIXME primitive
+    \end{defn}
+    \begin{defn}
+        FIXME perm iso
+    \end{defn}
+    \begin{rem}
+        FIXME
+        $f \from \Omega \iso \Delta$ induces unique
+        group hom
+        $\sym \Omega \iso \sym \Delta$.
+    \end{rem}
+\end{frame}
+
+\note{
+Explain perm iso:
+FIXME
+}
+
+\begin{frame}{Socles}
+    \begin{defn}
+        FIXME Socle
+    \end{defn}
+
+    \begin{thm}
+        The socle of a primitive group is characteristically simple.
+    \end{thm}
+
+    \begin{thm}[O'Nan-Scott]
+        Let $G \leq \sym \Omega$ be primitive.
+        All possible permutational isomorphism types of $\soc G$ and
+        $N_{\sym \Omega}(\soc G)$ are known.
+    \end{thm}
+\end{frame}
+
+\begin{frame}{Wreath Products (1)}
+    \begin{defn}
+        FIXME Abstract Wreath Product
+    \end{defn}
+
+    \begin{thm}
+        $\aut( T ^ \ell ) \cong \aut(T) \wr S_\ell$
+    \end{thm}
+\end{frame}
+
+\begin{frame}{Wreath Products (2)}
+    \begin{defn}
+        FIXME Imprimitive and product action
+    \end{defn}
+
+    \begin{thm}
+        FIXME
+        $H$ non-regular, $K$ finite.
+        $H \wr K$ primitive
+        iff.
+        $H$ primitive and $K$ transitive.
+    \end{thm}
+\end{frame}
+
+\note{
+Explain WP actions via
+
+base
+
+top
+}
+
+\begin{frame}{The PA Type}
+    \begin{defn}
+        FIXME AS
+    \end{defn}
+
+    \begin{defn}
+        FIXME PA
+    \end{defn}
+
+    \begin{lemma}
+        FIXME Properties of PA type
+    \end{lemma}
+\end{frame}
+
+\note{Mention $G \leq$ norm of socle}
+
+\begin{frame}{The Key Idea}
+    \centering
+    {\Large
+    Construct $N_{\sym \Omega}(\soc G)$!
+    }
+\end{frame}
+
+\begin{frame}{And Why It Works}
+    \begin{lemma}
+        Let $G \leq \sym \Omega$ be primitive of type PA.
+        Then
+        \vspace{-0.5em}
+        \[
+            [ N_{\sym \Omega}(\soc G) : \soc G ]
+            \leq \sqrt n \cdot 2 ^ {\log n \log \log n}.
+        \]
+    \end{lemma}
+
+    \begin{lemma}
+        Let $G = \gen X \leq \sym \Omega$ be primitive of type PA.
+        Furthermore let a generating set for
+        $N_{\sym \Omega}(\soc G)$ be known.
+        Then $N_{\sym \Omega}(G)$ can be computed in time
+        $O(n ^ 3 \cdot 2 ^ {2 \log n \log \log n} \cdot \abs X)$.
+    \end{lemma}
+\end{frame}
