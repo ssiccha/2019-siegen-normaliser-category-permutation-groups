@@ -1,0 +1,122 @@
+\begin{frame}{Permutation Homomorphisms (1)}
+   \begin{defn}
+       Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation groups.
+       A tuple
+       $(f, \varphi)$
+       with
+       map $f \from \Omega \to \Delta$
+       and
+       group hom.
+       $\varphi \from G \to H$
+       is called a
+       \emph{%
+       permutation hom. from $(G, \Omega)$ to $(H, \Delta)$
+       }
+       if for all $g \in G$ holds
+       \[
+           FIXME ~COMMUTING DIAGRAM
+       \]
+   \end{defn}
+\end{frame}
+
+\begin{frame}{Permutation Homomorphisms (2)}
+    \begin{lemma}
+        Let $G \leq \sym \Omega$ and $f \from \Omega \to \Delta$.
+        There exist a group $H \leq \sym \Delta$
+        and a group hom. $\varphi \from G \to H$ such that
+        $(f, \varphi)$ is a permutation hom.
+        if and only if
+        \[
+            \sset{ f ^ {-1}(\set{x}) }{ x \in \im f }
+        \]
+        is $G$-invariant.
+    \end{lemma}
+\end{frame}
+
+\begin{frame}{Permutation Homomorphisms (3)}
+    FIXME EXAMPLE
+
+    \begin{rem}
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
+        $f \from \Omega \onto \Delta$ uniquely determines,
+        if it exists,
+        a group hom. $\varphi \from G \to H$ such that
+        $(f, \varphi)$
+        is a permutation hom.
+    \end{rem}
+\end{frame}
+
+\begin{frame}{PermGrp}
+    \begin{defn}
+        FIXME Define $\permgrp$.
+    \end{defn}
+\end{frame}
+
+\note{equiv to cat of $(G, \Omega, \rho)$}
+
+\begin{frame}{Product in PermGrp}
+    \begin{lemma}
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation
+        groups.
+        Then $(G \times H, \Omega \times \Delta)$ with
+        $(p_1, \pi_1)$ and $(p_2, \pi_2)$ is a product in $\permgrp$.
+    \end{lemma}
+\end{frame}
+
+\begin{frame}{Cartesian Decompositions}
+    \begin{defn}
+        Let $\mathcal C$ be a category and $X$ an object of $\mathcal C$.
+        A family of morphisms $(f_i)_{i \in I}$ with
+        $f_i \from X \to X_i$
+        is called a
+        \emph{cartesian decomposition of $X$}
+        if
+        \[
+            \prod_{i \in I} f_i
+            \from
+            X
+            \to
+            \prod_{i \in I} X_i
+        \]
+        is an isomorphism.
+    \end{defn}
+
+    \begin{lemma}
+        %Let $\mathcal C$ be a category and $X$ an object of $\mathcal C$.
+        A family $(f_i)_{i \in I}$ is a cartesian decomposition of $X$
+        if and only if
+        $X$ with $(f_i)_{i \in I}$ is a product in $C$.
+    \end{lemma}
+\end{frame}
+
+\begin{frame}{Homogeneous Cartesian Decompositions}
+    \begin{defn}
+        FIXME hom cartesian decomposition.
+        For all $i,j \in I$ have $f_i(X) \cong f_j(X)$
+    \end{defn}
+
+    \begin{defn}
+        FIXME strongly hom cartesian decomposition
+        For all $i,j \in I$ have $f_i(X) = f_j(X)$
+    \end{defn}
+
+    $\Rightarrow$
+    Compute a strongly homogeneous cartesian decomposition of $\soc G$!
+\end{frame}
+
+\begin{frame}{Combinatorial Cartesian Decompositions}
+    FIXME LEAVE THIS FRAME OUT?
+    \begin{defn}
+        CCD
+    \end{defn}
+
+    \begin{lemma}
+        unordered cd bijection CCD
+    \end{lemma}
+
+    \begin{thm}[Praeger, Schneider]
+        $G$ leaves CCD invariant
+        if and only if
+        $G$ embeds into PA WP.
+    \end{thm}
+\end{frame}

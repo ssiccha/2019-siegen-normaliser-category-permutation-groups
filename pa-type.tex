@@ -82,14 +82,14 @@ top
 
 \note{Mention $G \leq$ norm of socle}
 
-\begin{frame}{The Key Idea}
+\begin{frame}{The Key Idea ...}
     \centering
     {\Large
     Construct $N_{\sym \Omega}(\soc G)$!
     }
 \end{frame}
 
-\begin{frame}{And Why It Works}
+\begin{frame}{... And Why It Works ...}
     \begin{lemma}
         Let $G \leq \sym \Omega$ be primitive of type PA.
         Then
@@ -108,3 +108,30 @@ top
         $O(n ^ 3 \cdot 2 ^ {2 \log n \log \log n} \cdot \abs X)$.
     \end{lemma}
 \end{frame}
+
+\begin{frame}{... And How To Do It}
+    Compute:
+    \[
+        \soc G \circlearrowright \Omega
+        \iso
+        T ^ \ell \circlearrowright \Delta ^ \ell
+    \]
+
+    Then:
+    \begin{align*}
+        G
+        ~
+        \lhook\joinrel\longrightarrow
+        & ~ N_{\sym \Delta ^ \ell}(T ^ \ell)
+        \\
+        & =
+        N_{\sym \Delta}(T) \wr S_\ell
+    \end{align*}
+\end{frame}
+
+\note[itemize]{%
+\item
+equal and not only isomorphic
+\item
+PA WP is a very very special group!
+}

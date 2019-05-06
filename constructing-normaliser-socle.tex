@@ -1,0 +1,49 @@
+\begin{frame}{The Algorithm (1)}
+    \centering
+    \large
+    Note that $T ^ \ell$ has \emph{exactly} $\ell$ minimal normal subgroups.
+\end{frame}
+
+\begin{frame}{The Algorithm (2)}
+    \begin{alg}
+        $~$
+        \\[-1em]
+        \begin{itemize}
+            \item
+            $\soc G ~ (\cong T_1 \times \ldots \times T_\ell)$.
+            \pause
+            \item
+            minimal normal subgroups $\set{ T_i }$ of $\soc G$.
+            \pause
+            \item
+            complements $\set{ C_i }$ of the $T_i$,
+            partitions $\Delta_i = \set{ \text{orbits of } C_i }$.
+            \pause
+            \item
+            $Q_i \from \Omega \to \Delta_i,
+            ~ \alpha \mapsto \alpha ^ {C_i}$
+            \pause
+            $~\Rightarrow~~ \psi_i \from G \to T_i$.
+            \pause
+            \item
+            $g_1, \ldots, g_\ell \in G$ such that $T_i ^ {g_i} = T_1$.
+            \pause
+            \item
+            $R_i \from \Delta_i \to \Delta_1,
+            ~ \delta \mapsto \delta ^ {g_i}$
+            \pause
+            $~~\Rightarrow~~ \rho_i \from T_i \to T_1$.
+            \pause
+            \item
+            $P_i := R_i \circ Q_i \from \Omega \to \Delta_1$
+            \pause
+            $~~\Rightarrow~~ \varphi_i \from G \to T_1$.
+        \end{itemize}
+    \end{alg}
+    \pause
+
+    Strongly homogeneous cartesian decomposition
+    $((P_i, \varphi_i))_{i \leq \ell}$
+    of
+    $\soc G$ in polynomial time.
+\end{frame}
