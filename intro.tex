@@ -1,40 +1,19 @@
-\begin{frame}{Conventions}
-\begin{itemize}
-\setlength\itemsep{\fill}
-\item
-$\log = \log_2$.
-\item
-All groups and sets are finite!
-\item
-Capital greek letters denote sets,
-Capital latin letters denote groups.
-Lower case letters denote elements or functions.
-\item
-Functions from the left $f(x)$
-but group actions from the right: $\alpha ^ g = g(\alpha)$.
-    \begin{itemize}
-        \item
-        $G$ acts on functions $\Omega \to \Delta$ via
-        $f ^ g = f \circ g ^ {-1}$.
-    \end{itemize}
-\item
-$T$ \emph{always} denotes a finite non-abelian simple group.
-If $T \leq \sym \Delta$ it acts transitively and non-regularly on $\Delta$.
-\end{itemize}
-\end{frame}
-
 \begin{frame}{Goal}
     \begin{thm}
         Let $G = \gen{X} \leq \sym \Omega$ be a primitive group
-        of PA type.
+        of {\color{blue} PA type}.
         The normaliser
         $N_{\sym \Omega}(G)$
-        can be computed in quasipolynomial time
+        can be computed in {\color{blue} quasipolynomial} time
         $O(n ^ 3 \cdot 2 ^ {2 \log n \log \log n} \cdot \abs X)$.
     \end{thm}
+
+    \vspace{1em}
+    \pause
+    Joint work with Prof. Colva Roney-Dougal.
 \end{frame}
 
-\begin{frame}{Recursion}
+\begin{frame}{Recursion for Normalisers}
     \begin{center}
         \hspace{-5em}
         \begin{tabular}{r c}

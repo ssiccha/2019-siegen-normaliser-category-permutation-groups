@@ -2,10 +2,12 @@
 %\documentclass[handout]{beamer}
 \usetheme{metropolis}           % Use metropolis theme
 
-%\setbeameroption{show notes}
+ \setbeameroption{show notes}
 %\setbeameroption{show notes on second screen}
 
 % Packages
+\usepackage{xcolor}
+\usepackage{multirow}
 % Maths
 \usepackage{amsthm}
 
@@ -27,14 +29,43 @@
 the Category of Permutation Groups}
 \date{May 9, 2019}
 \author{Sergio Siccha}
-\institute{Lehrstuhl B f\"ur Mathematik, RWTH Aachen}
+\institute{Lehr- und Forschungsgebiet Algebra, RWTH Aachen}
 
 \begin{document}
 \maketitle
+
+
+\begin{frame}{Conventions}
+\begin{itemize}
+\setlength\itemsep{1em}
+\item
+$\log := \log_2$.
+\pause
+\item
+All groups and sets are finite!
+\pause
+\item
+$\Omega, \Delta$ denote sets,
+$G, H, T$ denote groups.
+\pause
+\begin{itemize}
+    \item
+    $T$ \emph{always} denotes a finite non-abelian simple group.
+    \pause
+    \item
+    If $T \leq \sym \Delta$ it acts transitively and non-regularly on $\Delta$.
+    \pause
+\end{itemize}
+\item
+Functions act from the left $f(x)$
+but groups from the right: $\alpha ^ g = g(\alpha)$.
+\end{itemize}
+\end{frame}
+
 \section{Introduction}
 \input{intro.tex}
 
-\section{Some Problems in Computational Group Theory}
+\section{Complexity and Computational Group Theory}
 \input{complexity-overview.tex}
 
 \section{PA Type Groups and How To Normalise Them}

@@ -8,14 +8,17 @@
     &
     $f \in O(n ^ c)$
     \\
+    \pause
     Quasipolynomial Time:
     &
     $f \in 2 ^ {O((\log n) ^ c)}$
     \\
+    \pause
     Simply Exponential Time:
     &
     $f \in 2 ^ {O(n)}$
     \\
+    \pause
     Exponential Time:
     &
     $f \in 2 ^ {O(n ^ c)}$
@@ -25,15 +28,19 @@
     We say a problem $A$ is \emph{polynomial time reducible} to a problem $B$
     if there exists a polynomial time algorithm that transforms
     \vspace{-0.5em}
+    \pause
     \begin{itemize}
         \item
         instances of $A$ into instances of $B$, and
+        \pause
         \item
         solutions of $B$ into solutions of $A$.
     \end{itemize}
 \end{frame}
 
 \note[enumerate]{
+\item
+properly explain why quasipolynomial is not polynomial!
 \item
 changing input size to $\log n$ jumps up two classes
 \item
@@ -54,18 +61,10 @@ $A$ can be embedded into $B$
     \\
     &
     \only<4->{%
-    Permutation-Iso, Normaliser,
+    Normaliser
     }
     \only<-3>{\hphantom{%
-    Permutation-Iso, Normaliser,
-    }}
-    \\
-    &
-    \only<4->{%
-    Canonical Labeling
-    }
-    \only<-3>{\hphantom{%
-    Canonical Labeling
+    Normaliser
     }}
     \\[1em]
     \only<2->{%
@@ -83,7 +82,7 @@ $A$ can be embedded into $B$
     \only<-2>{\hphantom{%
     String-Iso, Intersection, Centraliser
     }}
-    \\[1em]
+    \\[2em]
     &
     \only<2->{%
     Graph-Iso
@@ -114,17 +113,23 @@ https://tex.stackexchange.com/questions/13793/beamer-alt-command-like-visible-in
         \\[0.5em]
         \multicolumn{2}{c}
         {Normalisers of arbitrary groups}
-        \\[1.5em]
+        \\[2.5em]
+        \pause
 
-        \underline{Polynomial}
+        \multirow{2}{*}{\parbox{0.5\linewidth}{
+            \underline{Polynomial}
+            \\[0.5em]
+            Normalisers of groups with \\ restricted composition factors
+            \\[0.5em]
+            Normalisers of simple groups
+        }}
+        \pause
         &
-        \underline{Quasipolynomial}
-        \\[0.5em]
-        \parbox{0.5\linewidth}
-        {Normalisers of groups with \\ restricted composition factors}
-        &
-        \parbox{0.5\linewidth}
-        {Normalisers of primitive \\ groups}
-        \\
+        \multirow{2}{*}{\parbox{0.5\linewidth}{
+            \underline{Quasipolynomial}
+            \\[0.5em]
+            {Normalisers of primitive \\ groups}
+        }}
     \end{tabular}
+    \vfill
 \end{frame}
