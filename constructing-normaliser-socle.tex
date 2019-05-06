@@ -1,10 +1,13 @@
-\begin{frame}{The Algorithm (1)}
+\begin{frame}{The Algorithm - Input}
     \centering
     \large
+    Let $G = \gen X \leq \sym \Omega$ be a primitive group of PA type.
+    \\[1em]
+    \pause
     Note that $T ^ \ell$ has \emph{exactly} $\ell$ minimal normal subgroups.
 \end{frame}
 
-\begin{frame}{The Algorithm (2)}
+\begin{frame}{The Algorithm - Str. Hom. Cartesian Decomposition}
     \begin{alg}
         $~$
         \\[-1em]
@@ -42,8 +45,36 @@
     \end{alg}
     \pause
 
-    Strongly homogeneous cartesian decomposition
+    This computes
     $((P_i, \varphi_i))_{i \leq \ell}$
-    of
-    $\soc G$ in polynomial time.
+    in polynomial time.
 \end{frame}
+
+\begin{frame}{The Algorithm - Normaliser of Socle}
+    \begin{itemize}
+        \item
+        $((P_i, \varphi_i))_{i \leq \ell}$
+        is a strongly homogeneous cartesian decomposition of $\soc G$.
+        \pause
+        \item
+        This yields
+        $\soc G \circlearrowright \Omega
+        \iso
+        T ^ \ell \circlearrowright \Delta ^ \ell$.
+        \pause
+        \item
+        Compute $N_{\sym \Delta}(T)$.
+        \pause
+        \item
+        Construct $N_{\sym \Delta}(T) \wr S_\ell \leq \sym \Delta ^ \ell$.
+        \pause
+        \item
+        Map back into $\sym \Omega$.
+    \end{itemize}
+\end{frame}
+
+\note{
+Compute $N_{S_\ell}(K)$ in simply exponential time.
+
+$\ell \leq \log n \Rightarrow$ polynomial time.
+}
