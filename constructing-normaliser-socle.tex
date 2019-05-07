@@ -7,26 +7,34 @@
     Note that $T ^ \ell$ has \emph{exactly} $\ell$ minimal normal subgroups.
 \end{frame}
 
+\note{
+$T ^ \ell$ has exactly one ``basis''!
+\\
+On next frame:
+mention $i$ always stands for all $i$ from $1$ to $\ell$
+}
+
 \begin{frame}{The Algorithm - Str. Hom. Cartesian Decomposition}
     \begin{alg}
         $~$
         \\[-1em]
         \begin{itemize}
             \item
-            $\soc G ~ (\cong T_1 \times \ldots \times T_\ell)$.
+            $\soc G \pause ~ (= T_1 \times \ldots \times T_\ell)$.
             \pause
             \item
-            minimal normal subgroups $\set{ T_i }$ of $\soc G$.
+            minimal normal subgroups $T_i$ of $\soc G$.
             \pause
             \item
-            complements $\set{ C_i }$ of the $T_i$,
+            complements $C_i$ of the $T_i$,
+            \pause
             partitions $\Delta_i = \set{ \text{orbits of } C_i }$.
             \pause
             \item
             $Q_i \from \Omega \to \Delta_i,
             ~ \alpha \mapsto \alpha ^ {C_i}$
             \pause
-            $~\Rightarrow~~ \psi_i \from G \to T_i$.
+            $~~\Rightarrow~~ \psi_i \from G \to T_i$.
             \pause
             \item
             $g_1, \ldots, g_\ell \in G$ such that $T_i ^ {g_i} = T_1$.
@@ -40,18 +48,18 @@
             \item
             $P_i := R_i \circ Q_i \from \Omega \to \Delta_1$
             \pause
-            $~~\Rightarrow~~ \varphi_i \from G \to T_1$.
+            $\hspace{0.5em}\Rightarrow~~ \varphi_i \from G \to T_1$.
         \end{itemize}
     \end{alg}
     \pause
 
-    This computes
     $((P_i, \varphi_i))_{i \leq \ell}$
-    in polynomial time.
+    is strongly homogeneous cartesian decomposition.
 \end{frame}
 
 \begin{frame}{The Algorithm - Normaliser of Socle}
     \begin{itemize}
+        \setlength\itemsep{\fill}
         \item
         $((P_i, \varphi_i))_{i \leq \ell}$
         is a strongly homogeneous cartesian decomposition of $\soc G$.
@@ -71,6 +79,8 @@
         \item
         Map back into $\sym \Omega$.
     \end{itemize}
+    \pause
+    $\leadsto N_{\sym \Omega}(\soc G)$.
 \end{frame}
 
 \note{

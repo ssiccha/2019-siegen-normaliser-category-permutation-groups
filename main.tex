@@ -1,15 +1,18 @@
  \documentclass{beamer}
 %\documentclass[handout]{beamer}
-\usetheme{metropolis}           % Use metropolis theme
+\usetheme{metropolis}
 
  \setbeameroption{show notes}
 %\setbeameroption{show notes on second screen}
 
 % Packages
+\usepackage{appendixnumberbeamer}
 \usepackage{xcolor}
 \usepackage{multirow}
 % Maths
 \usepackage{amsthm}
+\usepackage{tikz}
+\usetikzlibrary{cd}
 
 % Package Settings
 % AMSTHM
@@ -77,7 +80,9 @@ but groups from the right: $\alpha ^ g = g(\alpha)$.
 \section{Constructing the Normaliser of the Socle}
 \input{constructing-normaliser-socle.tex}
 
-\section{Summary}
+\section{Outlook and Summary}
 \input{summary.tex}
 
+\appendix
+\input{appendix.tex}
 \end{document}

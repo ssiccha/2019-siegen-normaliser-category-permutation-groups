@@ -1,0 +1,81 @@
+\begin{frame}{Universal Property of Wreath Products}
+    Let $H \leq \sym \Delta$, $K \leq \sym \Gamma$.
+    \[
+    \begin{tikzcd}[ampersand replacement=\&, row sep=small]
+        H ^ \Gamma
+            \ar[r]
+        \&
+        G
+        \&
+        K
+            \ar[l]
+        \\
+        \Delta ^ \Gamma
+            \ar[r]
+        \&
+        \Delta ^ \Gamma
+        \&
+        \Gamma
+            \ar[l]
+    \end{tikzcd}
+    \]
+    \pause
+    \vspace{1em}
+    \[
+    \hspace{-1em}
+    \begin{tikzcd}[ampersand replacement=\&, row sep=small]
+        H ^ \Gamma
+            \ar[r]
+        \&
+        G
+            \ar[r]
+        \&
+        K
+            \ar[bend left=33]{l}
+        \\
+        \Delta \times \Gamma
+            \ar[r]
+        \&
+        \Delta \times \Gamma
+            \ar[r]
+        \&
+        \Gamma
+            \ar[bend left=33]{l}
+    \end{tikzcd}
+    \]
+\end{frame}
+
+\begin{frame}{Combinatorial Cartesian Decompositions (1)}
+    \begin{defn}
+        Let $\Omega$ be a set.
+        For each $\gamma \in \Gamma$ let $\Delta_\gamma$ be a partition of
+        $\Omega$ with $\abs{\Delta_\gamma} \geq 2$.
+        We say that $\set{ \Delta_\gamma }_{\gamma \in \Gamma}$ is a
+        \emph{(combinatorial) cartesian decomposition of $\Omega$}
+        if
+        \pause
+        for any choice of $\delta_\gamma \in \Delta_\gamma$
+        we have that
+        \[
+            \bigcap_{\gamma \in \Gamma} \delta_\gamma
+        \]
+        is a singleton set.
+    \end{defn}
+    \pause
+
+    \begin{lemma}
+        There is a one-to-one correspondence between
+        unordered cartesian decompositions
+        and combinatorial cartesian decompositions.
+    \end{lemma}
+\end{frame}
+
+\begin{frame}{Combinatorial Cartesian Decompositions (2)}
+    \begin{thm}[Praeger, Schneider]
+        A group $G \leq \sym \Omega$ leaves a homogeneous combinatorial
+        cartesian decomposition invariant
+        if and only if
+        $G$ embeds into a product action wreath product
+        $\sym \Delta \wr \sym \Gamma$.
+    \end{thm}
+\end{frame}

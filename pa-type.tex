@@ -1,21 +1,47 @@
 \begin{frame}{Fundamentals}
     \begin{defn}
-        FIXME primitive
+        Let $G \leq \sym \Omega$ be transitive.
+        $G$ is called \emph{imprimitive} if there exists a non-trivial
+        $G$-invariant partition of $\Omega$.
+        Otherwise it is called \emph{primitive}.
     \end{defn}
+    \pause
+
     \begin{defn}
-        FIXME perm iso
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation groups.
+        We call a pair $(f, \varphi)$ with
+        $f \from \Omega \to \Delta$
+        and
+        $\varphi \from G \to H$
+        a \emph{permutation isomorphism}
+        if
+        \pause
+        for all
+        $g \in G$ and $\alpha \in \Omega$ holds
+        $f(\alpha ^ g) = f(\alpha) ^ {\varphi(g)}$.
     \end{defn}
-    \begin{rem}
-        FIXME
-        $f \from \Omega \iso \Delta$ induces unique
-        group hom
-        $\sym \Omega \iso \sym \Delta$.
-    \end{rem}
 \end{frame}
 
-\note{
+\note[itemize]{
+\item
 Explain perm iso:
-FIXME
+\begin{itemize}
+    \item
+    Relabel points and how to map $G \to H$ accordingly.
+    \item
+    $G, H \leq \sym \Omega$ perm iso iff. exists $\sigma \in \sym \Omega$ with
+    $G ^ \sigma = H$.
+    \item
+    $f \from \Omega \iso \Delta$ induces unique
+    group hom
+    $\sym \Omega \iso \sym \Delta$.
+\end{itemize}
+\item
+perm iso can be extended to the whole symmetric group
+\\
+$\leadsto$
+The normaliser of $G$ over $\Omega$ is mapped to the normaliser of $H$ over
+$\Delta$.
 }
 
 \begin{frame}{Socles}
@@ -45,6 +71,10 @@ FIXME
         The semidirect product
         $H \wr K = H ^ \ell \rtimes K$
         is called the \emph{wreath product of $H$ with $K$}.
+        \pause
+        $H ^ \ell$ is called the \emph{base group}.
+        \pause
+        $K$ is called the \emph{top group}.
     \end{defn}
     \vspace{1em}
     \pause
@@ -60,7 +90,17 @@ FIXME
 
 \begin{frame}{Wreath Products (2)}
     \begin{defn}
-        FIXME Product action
+        Let $H \leq \sym \Delta$ and $K \leq S_\ell$.
+        The base group $H ^ \ell$ acts component-wise on $\Delta ^ \ell$.
+        The top group $K$ acts on the components of $\Delta ^ \ell$.
+        \pause
+        This yields an action of $H \wr K$ on $\Delta ^ \ell$
+        which we call the \emph{product action of $H \wr K$}.
+        \\
+        \pause
+        We call the permutation group on $\Delta ^ \ell$ induced by $H \wr K$
+        the \emph{product action wreath product of $H$ wirh $K$} and
+        also denote it by $H \wr K$.
     \end{defn}
     \vspace{1em}
     \pause
@@ -69,7 +109,7 @@ FIXME
         Let $H \leq \sym \Delta$ and $K \leq S_\ell$.
         $H \wr K$ in product action is primitive
         if and only if
-        $H$ is primitive and non-regularly and $K$ is transitive.
+        $H$ is primitive and non-regular and $K$ is transitive.
     \end{thm}
 \end{frame}
 
@@ -91,6 +131,10 @@ top
     \end{defn}
 \end{frame}
 
+\note{
+    Explain AS via Normaliser of $T$.
+}
+
 \begin{frame}{The PA Type}
     \begin{defn}
         Let $G \leq \sym \Omega$ be a primitive group.
@@ -107,6 +151,7 @@ top
             $\myhat G \leq N_{\sym \Delta}(T) \wr S_\ell$.
         \end{itemize}
     \end{defn}
+    \pause
 
     \begin{lemma}
         $N_{\sym \Delta ^ \ell}( T ^ \ell ) = N_{\sym \Delta}(T) \wr S_\ell$.
@@ -158,7 +203,11 @@ Thus contained in normaliser of socle
 \end{frame}
 
 \note{
-Explain $\abs{\out T} \leq \sqrt n$.
+Explain:
+\\
+$\abs{\out T} \leq \sqrt n$
+\\
+$\abs {S_\ell} \leq \ell ^ \ell$
 }
 
 \begin{frame}{... And How To Do It}
@@ -171,15 +220,20 @@ Explain $\abs{\out T} \leq \sqrt n$.
     \pause
 
     Then:
-    \begin{align*}
-        G
-        ~
-        \lhook\joinrel\longrightarrow
-        & ~ N_{\sym \Delta ^ \ell}(T ^ \ell)
-        \\
-        & =
-        N_{\sym \Delta}(T) \wr S_\ell
-    \end{align*}
+    \[
+    \begin{array}{ccll}
+        G                                   & \lhook\joinrel\longrightarrow
+        & N_{\sym \Delta ^ \ell}(T ^ \ell)
+        \pause
+                                            & = ~ N_{\sym \Delta}(T) \wr S_\ell
+        \\[1em]
+        \pause
+        N_{\sym \Omega}(\soc G)
+        &
+        \xleftarrow{\,\raisebox{-1pt}{\ensuremath{\scriptstyle{\sim}}}\,}
+        & N_{\sym \Delta ^ \ell}(T ^ \ell)
+    \end{array}
+    \]
 \end{frame}
 
 \note[itemize]{%
