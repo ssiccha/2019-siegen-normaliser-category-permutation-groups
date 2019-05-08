@@ -1,23 +1,27 @@
 \begin{frame}{Fundamentals}
     \begin{defn}
         Let $G \leq \sym \Omega$ be transitive.
-        $G$ is called \emph{primitive} if there exists no non-trivial
+        $G$ is \emph{primitive} if
+        \\
+        there exists no non-trivial
         $G$-invariant partition of $\Omega$.
     \end{defn}
     \pause
 
     \begin{defn}
-        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation groups.
-        We call a pair $(f, \varphi)$ with
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
+        We call $(f, \varphi)$ with
         $f \from \Omega \to \Delta$
         and
         $\varphi \from G \to H$
         a \emph{permutation isomorphism}
         if
+        \\
         \pause
-        for all
-        $g \in G$ and $\alpha \in \Omega$ holds
-        $f(\alpha ^ g) = f(\alpha) ^ {\varphi(g)}$.
+        $\forall g \in G ~ \forall \alpha \in \Omega :$
+        \[
+            f(\alpha ^ g) = f(\alpha) ^ {\varphi(g)}.
+        \]
     \end{defn}
 \end{frame}
 
@@ -43,6 +47,41 @@ The normaliser of $G$ over $\Omega$ is mapped to the normaliser of $H$ over
 $\Delta$.
 }
 
+\begin{frame}{Wreath Products (1)}
+    \begin{defn}
+        Let $H$ be a group and let $K \leq S_\ell$.
+        $K$ acts on $H ^ \ell$ by permuting components.
+        \pause
+        The group
+        $H \wr K := H ^ \ell \rtimes K$
+        is the \emph{wreath product of $H$ with $K$}.
+        \\
+        \pause
+        $H ^ \ell$ is called the \emph{base group}.
+        \pause
+        $K$ is called the \emph{top group}.
+    \end{defn}
+    \vspace{1em}
+    \pause
+    \begin{thm}
+        $\aut( T ^ \ell ) \cong \aut(T) \wr S_\ell$.
+    \end{thm}
+\end{frame}
+
+\note{
+    Make sure to explain intuition behind wreath products
+}
+
+\begin{frame}{Wreath Products (2)}
+    \begin{defn}
+        Let $H \leq \sym \Delta$ and $K \leq S_\ell$.
+        The base group $H ^ \ell$ acts component-wise on $\Delta ^ \ell$.
+        The top group $K$ acts on $\Delta ^ \ell$ by permuting the components.
+        \pause
+        This yields the \emph{product action of $H \wr K$} on $\Delta ^ \ell$.
+    \end{defn}
+\end{frame}
+
 \begin{frame}{Socles}
     \begin{defn}
         Let $G$ be a group. The \emph{socle} of $G$, denoted $\soc G$,
@@ -57,63 +96,33 @@ $\Delta$.
 
     \begin{thm}[O'Nan-Scott]
         Let $G \leq \sym \Omega$ be primitive.
-        All possible permutational isomorphism types of $\soc G$
+        We know all possible permutational isomorphism types of
         \pause
-        and
-        $N_{\sym \Omega}(\soc G)$ are known.
+        \vspace{-0.5em}
+        \begin{itemize}
+            \item
+            $\soc G$,
+            \pause
+            \item
+            $N_{\sym \Omega}(\soc G)$.
+        \end{itemize}
     \end{thm}
 \end{frame}
-
-\begin{frame}{Wreath Products (1)}
-    \begin{defn}
-        Let $H \leq \sym \Delta$ and $K \leq S_\ell$.
-        $K$ acts on the components of $H ^ \ell$.
-        \pause
-        The semidirect product
-        $H \wr K = H ^ \ell \rtimes K$
-        is called the \emph{wreath product of $H$ with $K$}.
-        \pause
-        $H ^ \ell$ is called the \emph{base group}.
-        \pause
-        $K$ is called the \emph{top group}.
-    \end{defn}
-    \vspace{1em}
-    \pause
-    \begin{thm}
-        Let $T ^ \ell \leq \sym \Delta ^ \ell$ act component-wise.
-        Then $\aut( T ^ \ell ) \cong \aut(T) \wr S_\ell$.
-    \end{thm}
-\end{frame}
-
-\note{
-    Make sure to explain intuition behind wreath products
-}
-
-\begin{frame}{Wreath Products (2)}
-    \begin{defn}
-        Let $H \leq \sym \Delta$ and $K \leq S_\ell$.
-        The base group $H ^ \ell$ acts component-wise on $\Delta ^ \ell$.
-        The top group $K$ acts on the components of $\Delta ^ \ell$.
-        \pause
-        This yields the \emph{product action of $H \wr K$} on $\Delta ^ \ell$.
-    \end{defn}
-\end{frame}
-
-\note{
-Explain WP actions via
-
-base
-
-top
-}
 
 \begin{frame}{The AS Type}
     \begin{defn}
         Let $G \leq \sym \Omega$ be a primitive group.
         \\
-        We say $G$ is a group of \emph{AS type} if
-        $\soc G = T$ is non-abelian simple and non-regular,
-        and $G$ is almost simple.
+        $G$ is a group of \emph{AS type} if
+        \vspace{-0.5em}
+        \pause
+        \begin{itemize}
+            \item
+            $G$ is almost simple,
+            \pause
+            \item
+            $\soc G$ is non-abelian simple and non-regular.
+        \end{itemize}
     \end{defn}
 \end{frame}
 
@@ -124,12 +133,22 @@ top
 \begin{frame}{The PA Type}
     \begin{defn}
         Let $G \leq \sym \Omega$ be a primitive group.
-        \\
-        We say $G$ is a group of \emph{PA type} if it is permutation
-        isomorphic to a group $\myhat G \leq \sym \Delta ^ \ell$ with:
+        $G$ is a group of \emph{PA type} if
+        \\[-0.5em]
+        \pause
+        \[
+        G \circlearrowright \Omega
+        \iso
+        \myhat G \circlearrowright \Delta ^
+        \ell
+        \]
+        with:
         \vspace{-0.5em}
         \pause
         \begin{itemize}
+            \item
+            $T \circlearrowright \Delta$,
+            \pause
             \item
             $\soc \myhat G = T ^ \ell$ in component-wise action,
             \pause
@@ -140,7 +159,12 @@ top
     \pause
 
     \begin{lemma}
-        $N_{\sym \Delta ^ \ell}( T ^ \ell ) = N_{\sym \Delta}(T) \wr S_\ell$.
+        Let $T ^ \ell \leq \sym \Delta ^ \ell$ act component-wise. Then
+        \\[-0.5em]
+        \pause
+        \[
+        N_{\sym \Delta ^ \ell}( T ^ \ell ) = N_{\sym \Delta}(T) \wr S_\ell.
+        \]
     \end{lemma}
 \end{frame}
 
@@ -176,8 +200,8 @@ Thus contained in normaliser of socle
 
     \begin{lemma}
         Let $G = \gen X \leq \sym \Omega$ be primitive of type PA.
-        Furthermore let a generating set for
-        $N_{\sym \Omega}(\soc G)$ be known.
+        Let
+        $N_{\sym \Omega}(\soc G) = \gen Y$ be known.
         \\
         \pause
         Then $N_{\sym \Omega}(G)$ can be computed in time

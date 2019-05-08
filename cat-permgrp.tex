@@ -1,6 +1,7 @@
 \begin{frame}{Permutation Homomorphisms (1)}
     \begin{defn}
-        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation groups.
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
+        \\
         \pause
         Let
         $f \from \Omega \to \Delta$
@@ -10,12 +11,14 @@
         be a group hom..
         \\
         \pause
-        The pair $(f, \varphi)$ is called a
+        The pair $(f, \varphi)$ is a
         \emph{%
         permutation hom. from $(G, \Omega)$ to $(H, \Delta)$
         }
-        if for all $g \in G$ holds:
+        if
+        \\
         \pause
+        $\forall g \in G :$
         \[
         \begin{tikzcd}[ampersand replacement=\&]
             \Omega
@@ -57,7 +60,7 @@
 
     \begin{rem}
         Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
-        The map $f \from \Omega \onto \Delta$ uniquely determines,
+        A surjective map $f \from \Omega \onto \Delta$ uniquely determines,
         if it exists,
         a permutation homomorphism
         $(f, \varphi)$.
@@ -90,10 +93,18 @@
 
 \begin{frame}{PermGrp}
     \begin{defn}
-        The \emph{category of permutation groups},
-        denoted $\permgrp$,
-        consists of all pairs $(G, \Omega)$ with $G \leq \sym \Omega$ as objects
-        with permutation homomorphisms as morphisms.
+        The \emph{category of permutation groups}
+        $\permgrp$
+        consists of
+        \pause
+        \vspace{-0.5em}
+        \begin{itemize}
+            \item
+            all pairs $(G, \Omega)$ with $G \leq \sym \Omega$ as objects
+            \pause
+            \item
+            permutation homomorphisms as morphisms.
+        \end{itemize}
     \end{defn}
 \end{frame}
 
@@ -104,7 +115,26 @@
         Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation
         groups.
         Then $(G \times H, \Omega \times \Delta)$ with
-        $(p_1, \pi_1)$ and $(p_2, \pi_2)$ is a product in $\permgrp$.
+        \[
+        \begin{tikzcd}[ampersand replacement=\&, row sep=small]
+            G
+            \&
+            G \times H
+                \ar{l}[above]{\pi_1}
+                \ar[r, "\pi_2"]
+            \&
+            H
+            \\
+            \Omega
+            \&
+            \Omega \times \Delta
+                \ar{l}[above]{p_1}
+                \ar[r, "p_2"]
+            \&
+            \Delta
+        \end{tikzcd}
+        \]
+        is a product in $\permgrp$.
     \end{lemma}
 \end{frame}
 
@@ -132,7 +162,8 @@
         %Let $\mathcal C$ be a category and $X$ an object of $\mathcal C$.
         A family $(f_i)_{i \in I}$ is a cartesian decomposition of $X$
         if and only if
-        $X$ with $(f_i)_{i \in I}$ forms a product in $C$.
+        \\
+        $X$ with $(f_i)_{i \in I}$ forms a product in $\mathcal C$.
     \end{lemma}
 \end{frame}
 
@@ -154,24 +185,28 @@
 
 \begin{frame}{Homogeneous Cartesian Decompositions}
     \begin{defn}
-        Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$.
+        Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$
+        with $f_i \from X \to X_i$.
+        \\
         We call $(f_i)_{i \in I}$ a
         \emph{homogeneous cartesian decomposition of $X$}
         if
         \\
         \pause
-        for all $i,j \in I$ we have $f_i(X) \cong f_j(X)$.
+        for all $i,j \in I$ we have $X_i \cong X_j$.
     \end{defn}
     \pause
 
     \begin{defn}
-        Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$.
+        Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$
+        with $f_i \from X \to X_i$.
+        \\
         We call $(f_i)_{i \in I}$ a
-        \emph{strongly homogeneous cartesian decomposition of $X$}
+        \emph{strictly homogeneous cartesian decomposition of $X$}
         if
         \\
         \pause
-        for all $i,j \in I$ we have $f_i(X) = f_j(X)$.
+        for all $i,j \in I$ we have $X_i = X_j$.
     \end{defn}
     \pause
 
