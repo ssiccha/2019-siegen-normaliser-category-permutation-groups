@@ -40,34 +40,6 @@
 \end{frame}
 
 \begin{frame}{Permutation Homomorphisms (2)}
-    \[
-    \begin{tikzcd}[ampersand replacement=\&]
-        \Omega
-            \ar[r, "g"]
-            \ar[d, "f"]
-        \&
-        \Omega
-            \ar[d, "f"]
-        %
-        \\
-        %
-        \Delta
-            \ar[r, "\varphi(g)"]
-        \&
-        \Delta
-    \end{tikzcd}
-    \]
-
-    \begin{rem}
-        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
-        A surjective map $f \from \Omega \onto \Delta$ uniquely determines,
-        if it exists,
-        a permutation homomorphism
-        $(f, \varphi)$.
-    \end{rem}
-\end{frame}
-
-\begin{frame}{Permutation Homomorphisms (3)}
     \begin{lemma}
         Let $G \leq \sym \Omega$ and $f \from \Omega \to \Delta$.
         There exists a permutation hom.
@@ -90,6 +62,36 @@
     \\
     if $f$ is bijection such a $\varphi$ always exists.
 }
+
+\begin{frame}{Permutation Homomorphisms (3)}
+    \[
+    \begin{tikzcd}[ampersand replacement=\&]
+        \Omega
+            \ar[r, "g"]
+            \ar[d, "f"]
+        \&
+        \Omega
+            \ar[d, "f"]
+        %
+        \\
+        %
+        \Delta
+            \ar[r, "\varphi(g)"]
+        \&
+        \Delta
+    \end{tikzcd}
+    \]
+
+    \begin{rem}
+        Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$.
+        A surjective map $f \from \Omega \onto \Delta$
+        \pause
+        uniquely determines,
+        if it exists,
+        a permutation homomorphism
+        $(f, \varphi)$.
+    \end{rem}
+\end{frame}
 
 \begin{frame}{PermGrp}
     \begin{defn}
@@ -115,6 +117,7 @@
         Let $G \leq \sym \Omega$ and $H \leq \sym \Delta$ be permutation
         groups.
         Then $(G \times H, \Omega \times \Delta)$ with
+        \pause
         \[
         \begin{tikzcd}[ampersand replacement=\&, row sep=small]
             G
@@ -188,12 +191,15 @@
         Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$
         with $f_i \from X \to X_i$.
         \\
-        We call $(f_i)_{i \in I}$ a
-        \emph{homogeneous cartesian decomposition of $X$}
+        We call $(f_i)_{i \in I}$
+        \emph{homogeneous}
         if
         \\
         \pause
-        for all $i,j \in I$ we have $X_i \cong X_j$.
+        \vspace{-1em}
+        \[
+            \hspace{3em} X_i \cong X_j ~~~ \forall i, j \in I.
+        \]
     \end{defn}
     \pause
 
@@ -201,18 +207,20 @@
         Let $(f_i)_{i \in I}$ be a cartesian decomposition of $X$
         with $f_i \from X \to X_i$.
         \\
-        We call $(f_i)_{i \in I}$ a
-        \emph{strictly homogeneous cartesian decomposition of $X$}
+        We call $(f_i)_{i \in I}$
+        \emph{strictly homogeneous}
         if
         \\
         \pause
-        for all $i,j \in I$ we have $X_i = X_j$.
+        \vspace{-1em}
+        \[
+            \hspace{3em} X_i = X_j ~~~ \forall i, j \in I.
+        \]
     \end{defn}
     \pause
 
     $\leadsto$
-    Compute a strongly homogeneous cartesian decomposition of the permutation
-    group $\soc G$!
+    Compute a strictly homogeneous cartesian decomposition of $\soc G$!
 \end{frame}
 
 \note
